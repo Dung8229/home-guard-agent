@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from src.utils.types import FrameData
+from src.utils.classes import FrameData
 
 class Camera:
     def __init__(self, source=0):
@@ -29,7 +29,7 @@ class Camera:
         cv2.destroyAllWindows()
         
 if __name__ == "__main__":
-    cam = Camera(source="data/test.mp4")  # 0 = webcam laptop
+    cam = Camera(source="data/test_vid.mp4")  # 0 = webcam laptop
     while True:
         frame_data = cam.get_frame()
         if frame_data is None:
