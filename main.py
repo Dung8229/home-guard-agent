@@ -1,0 +1,5 @@
+frame_data = camera.get_frame()
+frame_data = detector.detect(frame_data)
+frame_data = face_recognizer.recognize(frame_data)
+frame_data = plate_recognizer.recognize(frame_data)
+drawer.display(frame_data)
