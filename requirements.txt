@@ -1,1 +1,7 @@
-opencv
+opencv-python
+numpy
+insightface
+mediapipe
+onnxruntime
+ultralytics
+openmim

@@ -10,3 +10,6 @@ make camera:
 
 make classes:
 	PYTHONPATH=. $(PYTHON) src/utils/classes.py
+
+make crop:
+	PYTHONPATH=. $(PYTHON) src/modules/recognition/face_cropper.py

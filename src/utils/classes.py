@@ -64,6 +64,9 @@ class FrameData:
     def get_image(self) -> np.ndarray:
         return self.image
     
+    def get_id(self):
+        return self.frame_id
+    
 if __name__ == "__main__":
     image = cv2.imread("data/test_img.jpg", cv2.IMREAD_COLOR)
     image = cv2.resize(image, (640, 480))
